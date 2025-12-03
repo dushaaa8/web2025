@@ -13,6 +13,29 @@
     <title>🥖Хліборобство на Вінниччині - Головна</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+        @keyframes sway {
+            0% {
+                transform: rotate(-3deg);
+            }
+            50% {
+                transform: rotate(3deg);
+            }
+            100% {
+                transform: rotate(-3deg);
+            }
+        }
+
+        .swaying-gif {
+            animation-name: sway;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform-origin: center center;
+        }
+    </style>
 </head>
 <body class="m-0 p-0 font-[Comfortaa] text-white width-full max-w-full flex justify-center overflow-x-hidden">
     <main id="main" class="w-full flex flex-col ">
@@ -34,8 +57,8 @@
                 <span class="w-full leading-none font-thin text-2xl text-center inline-block sm:text-xl sm:text-left sm:w-[45%]">Тут ви можете дізнатись багато нового про історію, традиції, та цікаві факти про хліборобство на Вінниччині</span>
             </div>
         </section>
-        <section id="priqol" class="max-h-full flex justify-center py-10 bg-[#F7C35F]">
-            <img src="graphics/Vinnytsya_gerb.gif" alt="">
+        <section id="priqol" class="max-h-full flex justify-center py-12 bg-[#F7C35F]">
+            <img src="graphics/Vinnytsya_gerb.gif" alt="" class="swaying-gif">
         </section>
         <section id="facts" class=" bg-[url('graphics/pole2.jpg')] bg-no-repeat bg-center bg-cover h-[500px] flex justify-center items-center py-10">
             <div id="section-content" class="w-[80%] flex flex-col items-center text-center">
